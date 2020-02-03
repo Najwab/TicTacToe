@@ -1,4 +1,4 @@
-let items =document.querySelectorAll(".items");//to select the 9 zone 
+/*let items =document.querySelectorAll(".items");//to select the 9 zone 
 let turn=true;//to change turns x then o 
 let counter=0; // to call winlose function win it's 3 
 let box =document.querySelector(".buttoncontainer");//to select the start Over button 
@@ -74,7 +74,7 @@ function winLose(){
         console.log("XX WIN");
          }else if (secondcounter ===1){
             console.log("OO is WIN");
-         }*/
+         }
 
          if(items[3].innerText===items[4].innerText && items[4].innerText===items[5].innerText){
             if(items[3].innerText==="X"){
@@ -97,7 +97,7 @@ function winLose(){
         console.log("XXX WIN");
          }else if (thirdcounter ===1){
             console.log("OOO is WIN");
-         }*/
+         }*//*
          if(items[6].innerText===items[7].innerText && items[7].innerText===items[8].innerText){
             if(items[6].innerText==="X"){
                 console.log("x third row TWO Win")
@@ -166,3 +166,105 @@ function startOver(){
     }
 
     box.addEventListener('click',startOver);
+
+    */
+   function winLose(){
+    //check first row 
+      
+      if(items[0].innerText===items[1].innerText && items[1].innerText===items[2].innerText){
+         if(items[1].innerText==="X"){
+             console.log("x first row Win")
+         }else if(items[1].innerText==="O"){
+             console.log("O first row is WIN");
+         }
+     }
+      
+ // check second row 
+ 
+    if(items[3].innerText===items[4].innerText && items[4].innerText===items[5].innerText){
+         if(items[3].innerText==="X"){
+                 console.log("x second row Win")
+         }else if(items[3].innerText==="O"){
+                 console.log("O second row is WIN");
+         }
+     }
+ //check third row 
+ 
+    else if(items[6].innerText===items[7].innerText && items[7].innerText===items[8].innerText){
+          if(items[6].innerText==="X"){
+                 console.log("x third row TWO Win")
+         }else if(items[6].innerText==="O"){
+                 console.log("O third row is WIN");
+         }
+     }
+ 
+          //check first column 
+ 
+             else if(items[0].innerText===items[3].innerText && items[3].innerText===items[6].innerText){
+                 if(items[0].innerText==="X"){
+                     console.log("x column Win")
+                 }else if(items[0].innerText==="O"){
+                     console.log("O column is WIN");
+                 }
+           }
+ 
+         //check second column 
+            else if(items[1].innerText===items[4].innerText && items[4].innerText===items[7].innerText){
+                 if(items[1].innerText==="X"){
+                     console.log("x column TWO Win")
+                 }else if(items[1].innerText==="O"){
+                     console.log("O column Two is WIN");
+                 }
+             }
+ 
+               //check third column 
+             else if(items[2].innerText===items[5].innerText && items[5].innerText===items[8].innerText){
+                 if(items[2].innerText==="X"){
+                     console.log("x column third Win")
+                 }else if(items[2].innerText==="O"){
+                     console.log("O column thrid is WIN");
+                 }
+             }
+    
+             //check the first cross 
+            else if(items[0].innerText===items[4].innerText && items[4].innerText===items[8].innerText){
+                 if(items[0].innerText==="X"){
+                     console.log("x first cross Win")
+                 }else if(items[0].innerText==="O"){
+                     console.log("O second cross is WIN");
+                 }
+             }
+              //check the second cross 
+             else if(items[2].innerText===items[4].innerText && items[4].innerText===items[6].innerText){
+                 if(items[2].innerText==="X"){
+                     console.log("x second cross Win")
+                 }else if(items[2].innerText==="O"){
+                     console.log("O second cross is WIN");
+                 }
+             }
+ 
+             //tie 
+             else {
+                 console.log("Tie");
+             }
+ 
+ 
+ 
+ 
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
