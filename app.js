@@ -86,6 +86,7 @@ function winLose() {
             gameover = true;
             player1Wins += 1;
             player2Loses += 1;
+            
 
         } else if (items[1].innerText === "O") {
             newParagraph.innerText = contentName2 + ' Win!';
@@ -97,7 +98,7 @@ function winLose() {
     }
 
     // check second row 
-     if (items[3].innerText === items[4].innerText && items[4].innerText === items[5].innerText) {
+    if (items[3].innerText === items[4].innerText && items[4].innerText === items[5].innerText) {
         if (items[3].innerText === "X") {
             newParagraph.innerText = contentName1 + ' Win!';
             whoWin(contentName1);
@@ -133,7 +134,7 @@ function winLose() {
     }
 
     //check first column 
-     if (items[0].innerText === items[3].innerText && items[3].innerText === items[6].innerText) {
+    if (items[0].innerText === items[3].innerText && items[3].innerText === items[6].innerText) {
         if (items[0].innerText === "X") {
             newParagraph.innerText = contentName1 + ' Win!';
             whoWin(contentName1);
@@ -151,7 +152,7 @@ function winLose() {
     }
 
     //check second column 
-     if (items[1].innerText === items[4].innerText && items[4].innerText === items[7].innerText) {
+    if (items[1].innerText === items[4].innerText && items[4].innerText === items[7].innerText) {
         if (items[1].innerText === "X") {
             newParagraph.innerText = contentName1 + ' Win!';
             whoWin(contentName1);
@@ -169,7 +170,7 @@ function winLose() {
     }
 
     //check third column 
-     if (items[2].innerText === items[5].innerText && items[5].innerText === items[8].innerText) {
+    if (items[2].innerText === items[5].innerText && items[5].innerText === items[8].innerText) {
 
         if (items[2].innerText === "X") {
             newParagraph.innerText = contentName1 + ' Win!';
@@ -187,7 +188,7 @@ function winLose() {
     }
 
     //check the first cross 
-     if (items[0].innerText === items[4].innerText && items[4].innerText === items[8].innerText) {
+    if (items[0].innerText === items[4].innerText && items[4].innerText === items[8].innerText) {
         if (items[0].innerText === "X") {
             newParagraph.innerText = contentName1 + ' Win!';
             whoWin(contentName1);
@@ -204,7 +205,7 @@ function winLose() {
 
     }
     //check the second cross 
-     if (items[2].innerText === items[4].innerText && items[4].innerText === items[6].innerText) {
+    if (items[2].innerText === items[4].innerText && items[4].innerText === items[6].innerText) {
         if (items[2].innerText === "X") {
             newParagraph.innerText = contentName1 + ' Win!';
             whoWin(contentName1);
@@ -222,7 +223,7 @@ function winLose() {
     }
 
     //tie > if number of click is 9 and gameover is false which means no if statment executed 
-     if (counter === 9 && !gameover) {
+    if (counter === 9 && !gameover) {
         newParagraph.innerText = "Tie";
         tiewindow();
         player1Tie += 1;
@@ -245,15 +246,6 @@ function startOver() {
     gameover = false;
     newParagraph.innerText = "";
 
-    //to count how many wins and losses and tie for each player
-    p1wins.innerText = "Win: " + player1Wins;
-    p1lose.innerText = "Lose: " + player1Loses;
-    p1tie.innerText = "Tie: " + player1Tie;
-
-
-    p2wins.innerText = "Win: " + player2Wins;
-    p2lose.innerText = "Lose: " + player2Loses;
-    p2tie.innerText = "Tie: " + player2Tie;
 
 }
 
@@ -297,6 +289,17 @@ function close() {
 function closeWin() {
     document.querySelector('.modal2').style.display = "none";
     document.querySelector('.modal3').style.display = "none";
+
+     //to count how many wins and losses and tie for each player
+    p1wins.innerText = "Win: " + player1Wins;
+    p1lose.innerText = "Lose: " + player1Loses;
+    p1tie.innerText = "Tie: " + player1Tie;
+
+
+    p2wins.innerText = "Win: " + player2Wins;
+    p2lose.innerText = "Lose: " + player2Loses;
+    p2tie.innerText = "Tie: " + player2Tie;
+    
 }
 closeButton.addEventListener("click", close);
 closeButtonWin.addEventListener("click", closeWin);

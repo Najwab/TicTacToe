@@ -1,3 +1,8 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
 /* to make zones next to each other  */
 .first-row {
     display: flex;
@@ -336,8 +341,8 @@ header {
 
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
+/* @media only screen and (max-width: 768px) {
+    /* For mobile phones: 
     header {
       display: block;
       width: 100%;
@@ -361,5 +366,5 @@ header {
         width: 30px;
     }
    
-  }
+  } */
 
