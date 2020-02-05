@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
@@ -9,7 +10,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
+
     <header>
         <div class="player-one-section">
             <h3>Player One</h3>
@@ -32,7 +35,16 @@
             <p class="p2t">Tie: 0</p>
         </div>
     </header>
+
+
+
+
+    <!-- to put turns message here -->
     <div class="targetP"></div>
+
+
+
+
 
     <div class="container">
 
@@ -55,15 +67,20 @@
 
         </div>
     </div> <br>
+
+
     <button class="buttoncontainer">Play Again</button>
 
+
+
+
+    <!--first window  to take two players names -->
     <div class="modal">
         <div class="modal-content">
             <div class="close">+</div>
             <img id="modal-img"
-                src="https://cdn2.iconfinder.com/data/icons/rasta/512/emoji_emoticon_sticker_man_rasta_idea-128.png"
-                alt="">
-            <form action="">
+                src="https://cdn2.iconfinder.com/data/icons/rasta/512/emoji_emoticon_sticker_man_rasta_idea-128.png">
+            <form>
                 <h1 class="game-name">Tic Tac Toe</h1>
                 <p class="players-name"> Player 1</p>
                 <p class="players-name"> Player 2</p>
@@ -71,26 +88,45 @@
                 <input type="text" placeholder="Enter Your Name" value="" id="name-input2">
                 <p class="x">X</p>
                 <p class="o">O</p>
-                <!--<a class="button" href="" ><button>Start Game</button></a>-->
                 <p class="button"> Start Game</p>
             </form>
-
         </div>
     </div>
 
+
+
+
+    <!--second window to display win message-->
     <div class="modal2">
         <div class="modal2-content">
-            <div class="close">+</div>
             <img id="win-img"
-                src="https://cdn2.iconfinder.com/data/icons/rasta/512/emoji_emoticon_sticker_man_rasta_thumbs_up-128.png"
-                alt="">
-                <div class="win-modal">
-                    <p class="win-m">j</p>
-                </div>
-                <p class="button"> OK</p>
-
+                src="https://cdn2.iconfinder.com/data/icons/rasta/512/emoji_emoticon_sticker_man_rasta_thumbs_up-128.png">
+            <div class="win-modal">
+                <p class="win-m">j</p>
+            </div>
+            <p class="button"> OK</p>
         </div>
     </div>
+
+
+
+
+
+    <!--third window to display Tie message-->
+    <div class="modal3">
+        <div class="modal3-content">
+            <img id="win-img"
+                src="https://cdn2.iconfinder.com/data/icons/rasta/512/emoji_emoticon_sticker_man_rasta_angel-128.png">
+            <div class="tie-modal">
+                <p class="tie-m">j</p>
+            </div>
+            <p class="button"> OK</p>
+        </div>
+    </div>
+
+
+
+
 
     <script src="app.js"></script>
 </body>
