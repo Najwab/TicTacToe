@@ -97,7 +97,7 @@ function winLose() {
     }
 
     // check second row 
-    else if (items[3].innerText === items[4].innerText && items[4].innerText === items[5].innerText) {
+     if (items[3].innerText === items[4].innerText && items[4].innerText === items[5].innerText) {
         if (items[3].innerText === "X") {
             newParagraph.innerText = contentName1 + ' Win!';
             whoWin(contentName1);
@@ -133,7 +133,7 @@ function winLose() {
     }
 
     //check first column 
-    else if (items[0].innerText === items[3].innerText && items[3].innerText === items[6].innerText) {
+     if (items[0].innerText === items[3].innerText && items[3].innerText === items[6].innerText) {
         if (items[0].innerText === "X") {
             newParagraph.innerText = contentName1 + ' Win!';
             whoWin(contentName1);
@@ -151,7 +151,7 @@ function winLose() {
     }
 
     //check second column 
-    else if (items[1].innerText === items[4].innerText && items[4].innerText === items[7].innerText) {
+     if (items[1].innerText === items[4].innerText && items[4].innerText === items[7].innerText) {
         if (items[1].innerText === "X") {
             newParagraph.innerText = contentName1 + ' Win!';
             whoWin(contentName1);
@@ -169,7 +169,7 @@ function winLose() {
     }
 
     //check third column 
-    else if (items[2].innerText === items[5].innerText && items[5].innerText === items[8].innerText) {
+     if (items[2].innerText === items[5].innerText && items[5].innerText === items[8].innerText) {
 
         if (items[2].innerText === "X") {
             newParagraph.innerText = contentName1 + ' Win!';
@@ -187,7 +187,7 @@ function winLose() {
     }
 
     //check the first cross 
-    else if (items[0].innerText === items[4].innerText && items[4].innerText === items[8].innerText) {
+     if (items[0].innerText === items[4].innerText && items[4].innerText === items[8].innerText) {
         if (items[0].innerText === "X") {
             newParagraph.innerText = contentName1 + ' Win!';
             whoWin(contentName1);
@@ -204,7 +204,7 @@ function winLose() {
 
     }
     //check the second cross 
-    else if (items[2].innerText === items[4].innerText && items[4].innerText === items[6].innerText) {
+     if (items[2].innerText === items[4].innerText && items[4].innerText === items[6].innerText) {
         if (items[2].innerText === "X") {
             newParagraph.innerText = contentName1 + ' Win!';
             whoWin(contentName1);
@@ -222,7 +222,7 @@ function winLose() {
     }
 
     //tie > if number of click is 9 and gameover is false which means no if statment executed 
-    else if (counter === 9 && !gameover) {
+     if (counter === 9 && !gameover) {
         newParagraph.innerText = "Tie";
         tiewindow();
         player1Tie += 1;
