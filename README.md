@@ -9,11 +9,6 @@
 [wireframe](https://wireframe.cc/PMR30q)
 
 
-####List unsolved problems which would be fixed in future iterations.
-* Solve who start first 
-* And make my code more organized and not repeatable 
-
-
 #Describe how you solved for the winner.
 
 the function started by an if statement that checks the first row of the zones by checking array index of the **first row [0,1,2]** it will check if index[0] inner text equal to index [1] **AND** IF index[1] equal to index[2].And if it's true it will check if the inner text equals X then it will print player one name Win else if it O it will print player two name win!. and will check second, third row, first, second, third column, and first,second cross as well
